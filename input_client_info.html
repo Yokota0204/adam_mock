@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YY-CRM | 既存顧客　案件作成画面</title>
+    <!-- css -->
+    <link href="bootstrap_5.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hanalei&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="service-title navbar-brand font-weight-bold" href="#">YY-CRM</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="login-user nav-item">
+              <a class="nav-link" href="#">
+                <img class="rounded-circle" src="img/default_icon.png" alt="ユーザーアイコン">
+                <span>User1</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="contents">
+      <div class="container">
+        <h2 class="form-title text-center border-bottom text-secondary pb-3 mb-5 mx-auto">案件情報入力</h2>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="yes-tab" data-bs-toggle="tab" href="#yes" role="tab" aria-controls="yes" aria-selected="true">代理店経由の案件</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="no-tab" data-bs-toggle="tab" href="#no" role="tab" aria-controls="no" aria-selected="false">直受注の案件</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="yes" role="tabpanel" aria-labelledby="yes-tab">
+            <form class="form-job mx-auto" action="#">
+              <div class="client form-group">
+                <label for="exampleFormControlSelect2">顧客を選択</label>
+                <select multiple class="form-control" id="exampleFormControlSelect2">
+                  <option>Client1</option>
+                  <option>Client2</option>
+                  <option>Client3</option>
+                  <option>Client4</option>
+                  <option>Client5</option>
+                </select>
+              </div>
+              <div class="genre form-group">
+                <label for="exampleFormControlTextarea1">案件ジャンル</label>
+                <select class="form-control">
+                  <option value="0">ジャンルを選択してください。</option>
+                  <option>金融</option>
+                  <option value="">美容</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">案件種別</label>
+                <select class="form-control">
+                  <option value="0">案件の種別を選択してください。</option>
+                  <option>緊急小口資金</option>
+                  <option value="">家賃支援給付金</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect2">代理店を選択</label>
+                <select multiple class="form-control" id="exampleFormControlSelect2">
+                  <option>Agent1</option>
+                  <option>Agent2</option>
+                  <option>Agent3</option>
+                  <option>Agent4</option>
+                  <option>Agent5</option>
+                </select>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">仲介手数料</label>
+                <div class="col-sm-10">
+                  <input type="number" class="form-control" id="inputEmail3" placeholder="仲介手数料の割合を入力。" min="1" max="100">
+                </div>
+              </div>
+              <div class="detail form-group">
+                <label for="exampleFormControlTextarea1">案件内容詳細</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">現在の営業進捗</label>
+                <select class="form-control">
+                  <option value="0">営業進捗ステータスを選択してください。</option>
+                  <option>リード</option>
+                  <option value="">アプローチ</option>
+                  <option value="">初期アポ</option>
+                  <option value="">クロージング</option>
+                  <option value="">受注</option>
+                  <option value="">フォロー</option>
+                </select>
+              </div>
+              <div class="btn-box">
+                <button type="submit" class="btn btn-primary">作成</button>
+              </div>
+            </form>
+          </div>
+          <div class="tab-pane fade" id="no" role="tabpanel" aria-labelledby="no-tab">
+            <form class="form-job mx-auto" action="#">
+              <div class="client form-group">
+                <label for="exampleFormControlSelect2">顧客を選択</label>
+                <select multiple class="form-control" id="exampleFormControlSelect2">
+                  <option>Client1</option>
+                  <option>Client2</option>
+                  <option>Client3</option>
+                  <option>Client4</option>
+                  <option>Client5</option>
+                </select>
+              </div>
+              <div class="genre form-group">
+                <label for="exampleFormControlTextarea1">案件ジャンル</label>
+                <select class="form-control">
+                  <option value="0">ジャンルを選択してください。</option>
+                  <option>金融</option>
+                  <option value="">美容</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">案件種別</label>
+                <select class="form-control">
+                  <option value="0">案件の種別を選択してください。</option>
+                  <option>緊急小口資金</option>
+                  <option value="">家賃支援給付金</option>
+                </select>
+              </div>
+              <div class="detail form-group">
+                <label for="exampleFormControlTextarea1">案件内容詳細</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">現在の営業進捗</label>
+                <select class="form-control">
+                  <option value="0">営業進捗ステータスを選択してください。</option>
+                  <option>リード</option>
+                  <option value="">アプローチ</option>
+                  <option value="">初期アポ</option>
+                  <option value="">クロージング</option>
+                  <option value="">受注</option>
+                  <option value="">フォロー</option>
+                </select>
+              </div>
+              <div class="btn-box">
+                <button type="submit" class="btn btn-primary">作成</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="bootstrap_5.0.0/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
