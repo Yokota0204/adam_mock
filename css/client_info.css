@@ -1,0 +1,114 @@
+.contents {
+  display: flex;
+}
+
+.left-content {
+  width: 50%;
+  padding: 120px 50px 150px 70px;
+}
+
+.left-content .card-columns {
+  column-count: 3;
+}
+
+.left-content .card {
+  display: inline-block;
+  width: 100%;
+  margin: 5px;
+}
+
+.left-content .card .card-body {
+  height: 200px;
+  display: flex;
+  justify-content: center; /* x軸 */
+  align-items: center; /* y軸 */
+}
+
+.left-content .card .card-body button {
+  border: none;
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
+
+.left-content .card .card-body .card-title {
+  margin: auto 0;
+}
+
+.left-content .card .card-body .icon-wrapper h6 {
+  margin-bottom: 20px;
+}
+
+.left-content .card .card-body .icon-wrapper img {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+/* .left-content .card .card-body .icon-wrapper a {
+  display: block;
+} */
+
+/* .left-content .card .card-body .name {
+  display: block;
+} */
+
+.right-content {
+  width: 50%;
+  padding: 120px 70px 150px 50px;
+}
+
+.right-content .btn-wrapper {
+  width: 20%;
+  margin-left: auto;
+}
+
+.right-content .btn-wrapper .btn {
+  width: 100%;
+}
+
+.right-content .sales-status-wrapper {
+  margin-bottom: 50px;
+}
+
+.right-content .sales-status-wrapper .container .row {
+  margin-top: 10px;
+  text-align: left;
+  font-size: 15px;
+  padding: 0;
+}
+
+.right-content .sales-status-wrapper .container .row .col {
+  /* padding: 10px 0; */
+}
+
+.right-content .sales-status-wrapper .container .row .done {
+  /* background-color: cornflowerblue;
+  color: white; */
+}
+
+.right-content .sales-status-wrapper .container .btn-wrapper {
+  /* width: 20%; */
+  margin-top: 20px;
+  /* margin-left: auto; */
+}
+
+/* .right-content .sales-status-wrapper .container .btn-wrapper .btn {
+  width: 100%;
+} */
+
+.right-content .jobs-wrapper .jobs {
+  margin-top: 20px;
+}
+
+.right-content .jobs-wrapper .jobs .row {
+  padding: 10px 25px;
+  margin-bottom: 2px;
+}
+
+.right-content .jobs-wrapper .jobs .row .col-8 {
+  text-align: left;
+}
+
+.right-content .jobs-wrapper .jobs .row .col-4 {
+  text-align: right;
+}
