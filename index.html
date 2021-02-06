@@ -12,11 +12,14 @@
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <!-- japanese -->
       <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap" rel="stylesheet">
+    <!-- jquery -->
+      <script type="text/javascript" src="scripts/jquery.js"></script>
+      <script type="text/javascript" src="scripts/tablesorter/jquery.tablesorter.js"></script>
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="service-title navbar-brand font-weight-bold" href="#">業務支援システム（仮）</a>
+        <a class="service-title navbar-brand font-weight-bold" href="#" id="test">業務支援システム（仮）</a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav">
             <li class="login-user nav-item">
@@ -31,17 +34,28 @@
     </header>
     <div class="contents">
       <div class="container">
+        <div class="top-wrapper">
+          <h3 class="border-bottom text-secondary pb-3 mb-5 ">一覧ページ</h3>
+          <div class="btn-wrapper">
+            <a class="btn client more-rounded" href="client_index.html">顧客一覧ページ</a>
+            <a class="btn appointment more-rounded" href="appointment_index.html">アポ一覧ページ</a>
+            <a class="btn agent more-rounded" href="agent_index.html">代理店一覧ページ</a>
+          </div>
+        </div>
         <ul class="nav nav-tabs" id="myTab" role="tablist">
           <li class="nav-item" role="presentation">
-            <a class="nav-link active" id="client-tab" data-bs-toggle="tab" href="#client" role="tab" aria-controls="client" aria-selected="true">顧客</a>
+            <a class="nav-link active" id="client-tab" data-bs-toggle="tab" href="#client" role="tab" aria-controls="client" aria-selected="true">新規顧客</a>
           </li>
           <li class="nav-item" role="presentation">
-            <a class="nav-link" id="agent-tab" data-bs-toggle="tab" href="#agent" role="tab" aria-controls="agent" aria-selected="false">代理店</a>
+            <a class="nav-link" id="appointment-tab" data-bs-toggle="tab" href="#appointment" role="tab" aria-controls="appointment" aria-selected="false">直近アポ</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="agent-tab" data-bs-toggle="tab" href="#agent" role="tab" aria-controls="agent" aria-selected="false">新規代理店</a>
           </li>
         </ul>
         <div class="tab-content text-center" id="myTabContent">
           <div class="tab-pane fade" id="agent" role="tabpanel" aria-labelledby="agent-tab">
-            <table class="table">
+            <table class="table" id="agent-table">
               <thead>
                 <tr>
                   <th scope="col">ID</th>
@@ -52,121 +66,59 @@
               <tbody>
                 <tr>
                   <th scope="row">1</th>
-                  <td>代理店</td>
-                  
-                  
+                  <td>代理店1</td>
                   <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
                 </tr>
                 <tr>
                   <th scope="row">2</th>
-                  <td>代理店</td>
-                  
-                  
+                  <td>代理店2</td>
                   <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
                 </tr>
                 <tr>
                   <th scope="row">3</th>
-                  <td>代理店</td>
-                  
-                  
+                  <td>代理店3</td>
                   <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
                 </tr>
                 <tr>
                   <th scope="row">4</th>
-                  <td>代理店</td>
-                  
-                  
+                  <td>代理店4</td>
                   <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
                 </tr>
                 <tr>
                   <th scope="row">5</th>
-                  <td>代理店</td>
-                  
-                  
+                  <td>代理店5</td>
                   <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
                 </tr>
                 <tr>
                   <th scope="row">6</th>
-                  <td>代理店</td>
-                  
-                  
+                  <td>代理店6</td>
                   <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
                 </tr>
                 <tr>
                   <th scope="row">7</th>
-                  <td>代理店</td>
-                  
-                  
+                  <td>代理店7</td>
                   <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
                 </tr>
                 <tr>
                   <th scope="row">8</th>
-                  <td>代理店</td>
-                  
-                  
+                  <td>代理店8</td>
                   <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
                 </tr>
                 <tr>
                   <th scope="row">9</th>
-                  <td>代理店</td>
-                  
-                  
+                  <td>代理店9</td>
                   <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
                 </tr>
                 <tr>
                   <th scope="row">10</th>
-                  <td>代理店</td>
-                  
-                  
-                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
-                </tr>
-                <tr>
-                  <th scope="row">11</th>
-                  <td>代理店</td>
-                  
-                  
-                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
-                </tr>
-                <tr>
-                  <th scope="row">12</th>
-                  <td>代理店</td>
-                  
-                  
-                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
-                </tr>
-                <tr>
-                  <th scope="row">13</th>
-                  <td>代理店</td>
-                  
-                  
-                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
-                </tr>
-                <tr>
-                  <th scope="row">14</th>
-                  <td>代理店</td>
-                  
-                  
-                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
-                </tr>
-                <tr>
-                  <th scope="row">15</th>
-                  <td>代理店</td>
-                  
-                  
-                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
-                </tr>
-                <tr>
-                  <th scope="row">16</th>
-                  <td>代理店</td>
-                  
-                  
+                  <td>代理店10</td>
                   <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
                 </tr>
               </tbody>
             </table>
           </div>
           <div class="tab-pane fade show active" id="client" role="tabpanel" aria-labelledby="client-tab">
-            <table class="table">
+            <table class="table" id="client-table">
               <thead>
                 <tr>
                   <th scope="col">ID</th>
@@ -180,146 +132,153 @@
               <tbody>
                 <tr>
                   <th scope="row">1</th>
-                  <td>顧客</td>
-                  <td>代理店</td>
+                  <td>顧客1</td>
+                  <td>代理店9</td>
                   <td>福岡県</td>
                   <td>福岡市</td>
                   <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
                 </tr>
                 <tr>
                   <th scope="row">2</th>
-                  <td>顧客</td>
-
-                  <td>代理店</td>
+                  <td>顧客2</td>
+                  <td>代理店7</td>
                   <td>福岡県</td>
                   <td>福岡市</td>
                   <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
                 </tr>
                 <tr>
                   <th scope="row">3</th>
-                  <td>顧客</td>
-
-                  <td>代理店</td>
+                  <td>顧客3</td>
+                  <td>代理店3</td>
                   <td>福岡県</td>
                   <td>福岡市</td>
                   <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
                 </tr>
                 <tr>
                   <th scope="row">4</th>
-                  <td>顧客</td>
-
-                  <td>代理店</td>
+                  <td>顧客4</td>
+                  <td>代理店6</td>
                   <td>福岡県</td>
                   <td>福岡市</td>
                   <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
                 </tr>
                 <tr>
                   <th scope="row">5</th>
-                  <td>顧客</td>
+                  <td>顧客5</td>
 
-                  <td>代理店</td>
+                  <td>代理店2</td>
                   <td>福岡県</td>
                   <td>福岡市</td>
                   <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
                 </tr>
                 <tr>
                   <th scope="row">6</th>
-                  <td>顧客</td>
-
-                  <td>代理店</td>
+                  <td>顧客6</td>
+                  <td>代理店8</td>
                   <td>福岡県</td>
                   <td>福岡市</td>
                   <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
                 </tr>
                 <tr>
                   <th scope="row">7</th>
-                  <td>顧客</td>
+                  <td>顧客7</td>
 
-                  <td>代理店</td>
+                  <td>代理店1</td>
                   <td>福岡県</td>
                   <td>福岡市</td>
                   <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
                 </tr>
                 <tr>
                   <th scope="row">8</th>
-                  <td>顧客</td>
-
-                  <td>代理店</td>
+                  <td>顧客8</td>
+                  <td>代理店3</td>
                   <td>福岡県</td>
                   <td>福岡市</td>
                   <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
                 </tr>
                 <tr>
                   <th scope="row">9</th>
-                  <td>顧客</td>
-
-                  <td>代理店</td>
+                  <td>顧客9</td>
+                  <td>代理店5</td>
                   <td>福岡県</td>
                   <td>福岡市</td>
                   <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
                 </tr>
                 <tr>
                   <th scope="row">10</th>
-                  <td>顧客</td>
-
-                  <td>代理店</td>
+                  <td>顧客10</td>
+                  <td>代理店6</td>
                   <td>福岡県</td>
                   <td>福岡市</td>
                   <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
                 </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane fade show" id="appointment" role="tabpanel" aria-labelledby="appointment-tab">
+            <table class="table" id="appointment-table">
+              <thead>
                 <tr>
-                  <th scope="row">11</th>
-                  <td>顧客</td>
-
-                  <td>代理店</td>
-                  <td>福岡県</td>
-                  <td>福岡市</td>
-                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
+                  <th scope="col">日付</th>
+                  <th scope="col">時間</th>
+                  <th scope="col">状態</th>
+                  <th scope="col">前日確認</th>
+                  <th scope="col">場所</th>
+                  <th scope="col">店舗</th>
+                  <th scope="col">名前</th>
+                  <th scope="col">年齢</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">2021/03/01</th>
+                  <td>11:00</td>
+                  <td>確定</td>
+                  <td>済</td>
+                  <td>天神</td>
+                  <td>スタバ</td>
+                  <td>アポ たか子</td>
+                  <td>30</td>
                 </tr>
                 <tr>
-                  <th scope="row">12</th>
-                  <td>顧客</td>
-
-                  <td>代理店</td>
-                  <td>福岡県</td>
-                  <td>福岡市</td>
-                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
+                  <th scope="row">2021/03/01</th>
+                  <td>18:00</td>
+                  <td>確定</td>
+                  <td>済</td>
+                  <td>天神</td>
+                  <td>スタバ</td>
+                  <td>アポ たえこ</td>
+                  <td>50</td>
                 </tr>
                 <tr>
-                  <th scope="row">13</th>
-                  <td>顧客</td>
-
-                  <td>代理店</td>
-                  <td>福岡県</td>
-                  <td>福岡市</td>
-                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
+                  <th scope="row">2021/03/03</th>
+                  <td>15:00</td>
+                  <td>確定</td>
+                  <td>済</td>
+                  <td>天神</td>
+                  <td>スタバ</td>
+                  <td>アポ たか子</td>
+                  <td>30</td>
                 </tr>
                 <tr>
-                  <th scope="row">14</th>
-                  <td>顧客</td>
-
-                  <td>代理店</td>
-                  <td>福岡県</td>
-                  <td>福岡市</td>
-                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
+                  <th scope="row">2021/03/03</th>
+                  <td>11:00</td>
+                  <td>調整中</td>
+                  <td>未</td>
+                  <td>天神</td>
+                  <td>ロッテリア</td>
+                  <td>アポ ふみこ</td>
+                  <td>40</td>
                 </tr>
                 <tr>
-                  <th scope="row">15</th>
-                  <td>顧客</td>
-
-                  <td>代理店</td>
-                  <td>福岡県</td>
-                  <td>福岡市</td>
-                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
-                </tr>
-                <tr>
-                  <th scope="row">16</th>
-                  <td>顧客</td>
-
-                  <td>代理店</td>
-                  <td>福岡県</td>
-                  <td>福岡市</td>
-                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
+                  <th scope="row">2021/03/13</th>
+                  <td>11:00</td>
+                  <td>調整予定</td>
+                  <td>未</td>
+                  <td>天神</td>
+                  <td>ロッテリア</td>
+                  <td>アポ ふみこ</td>
+                  <td>40</td>
                 </tr>
               </tbody>
             </table>
@@ -328,5 +287,13 @@
       </div>
     </div>
     <script src="bootstrap_5.0.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('#agent-table').tablesorter();
+        $('#client-table').tablesorter();
+        $('#pre-client-table').tablesorter();
+        $('#appointment-table').tablesorter();
+      });
+    </script>
   </body>
 </html>

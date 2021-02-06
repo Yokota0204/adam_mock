@@ -1,3 +1,32 @@
+.top-wrapper {
+  width: 100%;
+  padding: 100px 10px;
+}
+
+.top-wrapper .btn-wrapper {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.top-wrapper .btn-wrapper .btn {
+  margin: 40px;
+  padding: 20px 40px;
+  color: white;
+}
+
+.top-wrapper .btn-wrapper .client {
+  background-color: #F1C40F;
+}
+
+.top-wrapper .btn-wrapper .appointment {
+  background-color: #E74C3C;
+}
+
+.top-wrapper .btn-wrapper .agent {
+  background-color: #3498DB;
+}
+
 .nav {
   margin: 70px auto 30px auto;
 }
