@@ -1,0 +1,114 @@
+.contents {
+  display: flex;
+}
+
+.info-wrapper {
+  margin: 0 20px 50px 20px;
+}
+
+.board-table {
+  font-size: 14px;
+}
+
+.left-content {
+  padding: 80px 50px 150px 70px;
+}
+
+.left-content .personal-info-wrapper .personal-info-top {
+  display: flex;
+  align-items: center;
+}
+
+.left-content .personal-info-wrapper .personal-info-top img {
+  width: 150px;
+  margin: 0 20px;
+}
+
+.left-content .personal-info-wrapper .personal-info-top .main-info-wrapper {
+  width: 70%;
+  text-align: center;
+}
+
+.left-content .personal-info-wrapper .personal-info-top .main-info-wrapper .name-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-content .personal-info-wrapper .personal-info-top .main-info-wrapper .name-wrapper h5 {
+  margin-right: 10px;
+  margin-bottom: 1rem;
+}
+
+.left-content .personal-info-wrapper .personal-info-top .main-info-wrapper .name-wrapper h6 {
+  margin-bottom: 1rem;
+}
+
+.left-content .personal-info-wrapper .personal-info-top .main-info-wrapper .name-wrapper p {
+  margin-bottom: 0;
+}
+
+.left-content .career-wrapper .current-occp-wrapper {
+  margin-bottom: 50px;
+}
+
+.left-content .career-wrapper .current-occp-wrapper .btn-wrapper {
+  width: 19%;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+
+.left-content .career-wrapper .current-occp-wrapper .btn-wrapper .btn {
+  width: 100%;
+}
+
+.left-content .career-wrapper .past-career-wrapper .btn-wrapper {
+  display: flex;
+  width: 40%;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+
+.left-content .career-wrapper .past-career-wrapper .btn-wrapper .btn {
+  width: 50%;
+  margin-left: 10px;
+}
+
+.right-content {
+  padding: 80px 70px 150px 50px;
+}
+
+.right-content .animals-wrapper .animal-wrapper {
+  text-align: center;
+}
+
+.right-content .animals-wrapper .animal-wrapper img {
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+.right-content .needs-wrapper .need-wrapper {
+  margin-bottom: 1.5rem;
+  margin-left: 30px;
+}
+
+.right-content .needs-wrapper .need-wrapper .needs-item .row {
+  margin-bottom: 10px;
+}
+
+.right-content .goals-wrapper .goal-wrapper {
+  text-align: center;
+}
+
+.right-content .appointments-wrapper .btn-wrapper {
+  display: flex;
+  width: 40%;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+
+.right-content .appointments-wrapper .btn-wrapper .btn {
+  width: 50%;
+  margin-left: 10px;
+  font-weight: bold;
+}

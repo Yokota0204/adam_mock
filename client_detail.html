@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>業務支援システム | </title>
+    <!-- css -->
+      <link href="bootstrap_5.0.0/css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/main.css" rel="stylesheet">
+      <link href="css/client_detail.css" rel="stylesheet">
+    <!-- google font -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <!-- japanese -->
+      <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="service-title navbar-brand font-weight-bold" href="index.html">業務支援システム（仮）</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="login-user nav-item">
+              <a class="nav-link" href="#">
+                <img class="rounded-circle" src="img/default_icon.png" alt="ユーザーアイコン">
+                <span>User1</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="contents">
+      <div class="left-content">
+        <div class="info-wrapper personal-info-wrapper">
+          <h5 class="info-title border-bottom text-secondary pb-3 mb-4">基本情報</h5>
+          <div class="personal-info-top">
+            <img class="rounded-circle" src="img/sex/female.png" alt="女性アイコン">
+            <div class="main-info-wrapper">
+              <div class="name-wrapper">
+                <h5>顧客 花子</h5>
+                <h6>コキャク ハナコ</h6>
+              </div>
+              <p class="client-id">顧客ID： 1</p>
+              <p>1996/02/21 24歳</p>
+              <p>福岡県福岡市</p>
+              <p>紹介者： 代理店1</p>
+              <p>住居区分： 一人暮らし</p>
+              <p>世帯区分： 一人</p>
+            </div>
+          </div>
+        </div>
+        <div class="info-wrapper profile-text-wrapper">
+          <h5 class="info-title border-bottom text-secondary pb-3 mb-4">備考</h5>
+          <div class="profile-text">
+            スタバで話していましたが、ブチ切れられました。接近には注意してください。
+          </div>
+        </div>
+        <div class="info-wrapper career-wrapper">
+          <h5 class="info-title border-bottom text-secondary pb-3 mb-4">職歴</h5>
+          <div class="current-occp-wrapper">
+            <h6 class="info-title border-bottom text-secondary pb-3 mb-4">現在の職業</h6>
+            <div class="btn-wrapper">
+              <a class="btn btn-sm edit-btn">編集</a>
+            </div>
+            <table class="table text-center">
+              <thead>
+                <tr>
+                  <th scope="col">時間帯</th>
+                  <th scope="col">業種</th>
+                  <th scope="col">職種</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">昼</th>
+                  <td>フリーランス</td>
+                  <td>自営業</td>
+                </tr>
+                <tr>
+                  <th scope="row">夜</th>
+                  <td>飲み屋</td>
+                  <td>労働</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="past-career-wrapper">
+            <h6 class="info-title border-bottom text-secondary pb-3 mb-4">過去の職歴</h6>
+            <div class="btn-wrapper">
+              <a class="btn btn-sm btn-primary">新規追加</a>
+              <a class="btn btn-sm edit-btn">編集</a>
+            </div>
+            <div class="careers text-center board-table">
+              <div class="row board-header-row border">
+                <div class="col">期間</div>
+                <div class="col">業種</div>
+                <div class="col">職種</div>
+                <div class="col">役職</div>
+              </div>
+              <div class="row board-row career border">
+                <div class="col">現在</div>
+                <div class="col">フリーランス</div>
+                <div class="col">自営業</div>
+                <div class="col">なし</div>
+              </div>
+              <div class="row board-row career border">
+                <div class="col">現在</div>
+                <div class="col">飲み屋</div>
+                <div class="col">労働</div>
+                <div class="col">なし</div>
+              </div>
+              <div class="row board-row career border">
+                <div class="col">1年6ヶ月</div>
+                <div class="col">不動産</div>
+                <div class="col">労働</div>
+                <div class="col">なし</div>
+              </div>
+              <div class="row board-row career border">
+                <div class="col">１年３ヶ月</div>
+                <div class="col">IT</div>
+                <div class="col">労働</div>
+                <div class="col">チームマネージャー</div>
+              </div>
+              <div class="row board-row career border">
+                <div class="col">０年３ヶ月</div>
+                <div class="col">飲食店</div>
+                <div class="col">スタッフ</div>
+                <div class="col">なし</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-content">
+        <div class="info-wrapper animals-wrapper">
+          <h5 class="info-title border-bottom text-secondary pb-3 mb-4">動物占い</h5>
+          <div class="container">
+            <div class="row">
+              <div class="col animal-wrapper surface-wrapper">
+                <p>表面</p>
+                <img src="img/animals/sheep.png" alt="羊アイコン">
+                <p>羊</p>
+              </div>
+              <div class="col animal-wrapper dicision-wrapper">
+                <p>表面</p>
+                <img src="img/animals/raccoon.png" alt="たぬきアイコン">
+                <p>たぬき</p>
+              </div>
+              <div class="col animal-wrapper core-wrapper">
+                <p>本質</p>
+                <img src="img/animals/cheetah.png" alt="チーターアイコン">
+                <p>チーター</p>
+              </div>
+              <div class="col animal-wrapper hope-wrapper">
+                <p>希望</p>
+                <img src="img/animals/cheetah.png" alt="チーターアイコン">
+                <p>チーター</p>
+              </div>
+              <div class="col animal-wrapper hidden-wrapper">
+                <p>隠れ</p>
+                <img src="img/animals/wolf.png" alt="狼アイコン">
+                <p>狼</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="info-wrapper needs-wrapper">
+          <div class="wrapper-title pb-3 mb-4 border-bottom">
+            <h5 class="info-title text-secondary">ニーズ（１〜５）</h5>
+            <div class="btn-wrapper">
+              <a class="btn btn-sm edit-btn">編集</a>
+            </div>
+          </div>
+          <div class="need-wrapper human row">
+            <h6 class="info-title col-2 text-secondary">人</h6>
+            <div class="needs-item col-10">
+              <div class="row">
+                <div class="col-2 need-title">紹介</div>
+                <div class="col-10 score">
+                  <img src="img/star.png" alt="星アイコン">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="need-wrapper object row">
+            <h6 class="info-title col-2 text-secondary">物</h6>
+            <div class="needs-item col-10">
+              <div class="row">
+                <div class="col-2 need-title">自己実現</div>
+                <div class="col-10 score">
+                  <img src="img/star.png" alt="星アイコン">
+                  <img src="img/star.png" alt="星アイコン">
+                  <img src="img/star.png" alt="星アイコン">
+                  <img src="img/star.png" alt="星アイコン">
+                  <img src="img/star.png" alt="星アイコン">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-2 need-title">承認欲求</div>
+                <div class="col-10 score">
+                  <img src="img/star.png" alt="星アイコン">
+                  <img src="img/star.png" alt="星アイコン">
+                  <img src="img/star.png" alt="星アイコン">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="need-wrapper money row">
+            <h6 class="info-title col-2 text-secondary">金</h6>
+            <div class="needs-item col-10">
+              <div class="row">
+                <div class="col-2 need-title">即金</div>
+                <div class="col-10 score">
+                  <img src="img/star.png" alt="星アイコン">
+                  <img src="img/star.png" alt="星アイコン">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-2 need-title">仕事</div>
+                <div class="col-10 score">
+                  <img src="img/star.png" alt="星アイコン">
+                  <img src="img/star.png" alt="星アイコン">
+                  <img src="img/star.png" alt="星アイコン">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-2 need-title">借金解決</div>
+                <div class="col-10 score">
+                  <img src="img/star.png" alt="星アイコン">
+                  <img src="img/star.png" alt="星アイコン">
+                  <img src="img/star.png" alt="星アイコン">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="info-wrapper goals-wrapper">
+          <div class="wrapper-title pb-3 mb-4 border-bottom">
+            <h5 class="info-title text-secondary">目標</h5>
+            <div class="btn-wrapper">
+              <a class="btn btn-sm edit-btn">編集</a>
+            </div>
+          </div>
+          <div class="goal-wrapper header-row row">
+            <div class="col-2">区分</div>
+            <div class="col-10 row">
+              <div class="col">職業</div>
+              <div class="col">年収（万円）</div>
+              <div class="col">強さ(1〜5)</div>
+            </div>
+          </div>
+          <div class="goal-wrapper hope normal-row row">
+            <div class="col-2">理想</div>
+            <div class="col-10 row">
+              <div class="col">投資家</div>
+              <div class="col">3,000</div>
+              <div class="col score">
+                <img src="img/star.png" alt="星アイコン">
+                <img src="img/star.png" alt="星アイコン">
+                <img src="img/star.png" alt="星アイコン">
+                <img src="img/star.png" alt="星アイコン">
+                <img src="img/star.png" alt="星アイコン">
+              </div>
+            </div>
+          </div>
+          <div class="goal-wrapper real normal-row row">
+            <div class="col-2">現実</div>
+            <div class="col-10 row">
+              <div class="col">エンジニア</div>
+              <div class="col">300</div>
+              <div class="col score">
+                -
+              </div>
+            </div>
+          </div>
+          <div class="goal-wrapper least normal-row row">
+            <div class="col-2">最低</div>
+            <div class="col-10 row">
+              <div class="col">エンジニア</div>
+              <div class="col">500</div>
+              <div class="col score">
+                <img src="img/star.png" alt="星アイコン">
+                <img src="img/star.png" alt="星アイコン">
+                <img src="img/star.png" alt="星アイコン">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="info-wrapper tactics-wrapper">
+          <div class="wrapper-title pb-3 mb-4 border-bottom">
+            <h5 class="info-title text-secondary">戦略</h5>
+            <div class="btn-wrapper">
+              <a class="btn btn-sm edit-btn">編集</a>
+            </div>
+          </div>
+          <div class="tactics-text">
+            スタバでカズさんとABCをかけましょう。
+          </div>
+        </div>
+        <div class="info-wrapper appointments-wrapper">
+          <h6 class="info-title border-bottom text-secondary pb-3 mb-4">アポ状況</h6>
+          <div class="btn-wrapper">
+            <a class="btn btn-sm btn-primary">新規追加</a>
+            <a class="btn btn-sm edit-btn">編集</a>
+          </div>
+          <div class="appointments text-center board-table">
+            <div class="row board-header-row border">
+              <div class="col-4">日程</div>
+              <div class="col-8">アポ内容</div>
+            </div>
+            <div class="row board-row appointment border">
+              <div class="col-4">2021/02/14</div>
+              <div class="col-8">スタバでお茶</div>
+            </div>
+            <div class="row board-row appointment border">
+              <div class="col-4">2021/02/21</div>
+              <div class="col-8">映画館</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="bootstrap_5.0.0/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

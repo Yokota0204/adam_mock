@@ -20,3 +20,73 @@ header .navbar .collapse .navbar-nav .login-user a img {
   width: 30px;
   margin-right: 5px;
 }
+
+.more-rounded {
+  border-radius: 10px;
+}
+
+.left-content {
+  width: 50%;
+}
+
+.right-content {
+  width: 50%;
+}
+
+.btn-wrapper .btn {
+  box-shadow: 0 3px 2px 0 rgba(0, 0, 0, .2);
+  font-weight: bold;
+}
+
+.btn-wrapper .edit-btn {
+  background-color: #58D68D;
+  color: white;
+}
+
+.score {
+  text-align: center;
+}
+
+.score img {
+  width: 20px;
+}
+
+.header-row {
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.normal-row {
+  margin-bottom: 10px;
+}
+
+.wrapper-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-title h5 {
+  width: 80%;
+}
+
+.wrapper-title .btn-wrapper {
+  width: 50px;
+  margin-left: auto;
+  margin-bottom: .5rem;
+}
+
+.board-table .row {
+  padding: 10px 25px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.board-table .board-header-row {
+  margin-bottom: 1rem;
+}
+
+.board-table .board-row {
+  margin-bottom: 2px;
+}
