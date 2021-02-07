@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>業務支援システム | </title>
+    <!-- css -->
+      <link href="bootstrap_5.0.0/css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/main.css" rel="stylesheet">
+      <link href="css/appointment_index.css" rel="stylesheet">
+    <!-- google font -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap" rel="stylesheet">
+    <!-- jquery -->
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/tablesorter/jquery.tablesorter.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="service-title navbar-brand font-weight-bold" href="index.html">業務支援システム（仮）</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="login-user nav-item">
+              <a class="nav-link" href="#">
+                <img class="rounded-circle" src="img/default_icon.png" alt="ユーザーアイコン">
+                <span>User1</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="contents">
+      <div class="container index-container">
+        <h3 class="text-center index-title">アポ一覧</h3>
+        <div class="index-sort-wrapper">
+          <h4 class="text-center">絞り込み</h4>
+          <form class="form-inline my-2 my-lg-0">
+            <div class="input-wrapper">
+              <div class="row status">
+                <label for="exampleSelect1" class="col-3">状況</label>
+                <select class="col-9" id="exampleSelect1">
+                  <option>選択してください。</option>
+                  <option>確定</option>
+                  <option>調整中</option>
+                  <option>調整済み</option>
+                  <option>済</option>
+                </select>
+              </div>
+              <div class="form-group row date">
+                <div class="select-wrapper start-select-wrapper">
+                  <label for="example-date-input" class="col-3 col-form-label">開始日</label>
+                  <div class="col-9">
+                    <input class="form-control" type="date" id="example-date-input">
+                  </div>
+                </div>
+                <div class="center-part-wrapper">
+                  <div class="center-part">〜</div>
+                </div>
+                <div class="select-wrapper end-select-wrapper">
+                  <label for="example-date-input" class="col-3 col-form-label">終了日</label>
+                  <div class="col-9">
+                    <input class="form-control" type="date" id="example-date-input">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-wrapper">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">検索</button>
+            </div>
+          </form>
+        </div>
+        <table class="table" id="appointment-table">
+          <thead>
+            <tr>
+              <th scope="col">日付</th>
+              <th scope="col">時間</th>
+              <th scope="col">状態</th>
+              <th scope="col">前日確認</th>
+              <th scope="col">場所</th>
+              <th scope="col">店舗</th>
+              <th scope="col">名前</th>
+              <th scope="col">年齢</th>
+              <th scope="col">顧客詳細</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">2021/03/01</th>
+              <td>11:00</td>
+              <td>確定</td>
+              <td>済</td>
+              <td>天神</td>
+              <td>スタバ</td>
+              <td>アポ たか子</td>
+              <td>30</td>
+              <td><a class="btn btn-primary btn-sm" href="client_detail.html">顧客詳細</a></td>
+            </tr>
+            <tr>
+              <th scope="row">2021/03/01</th>
+              <td>18:00</td>
+              <td>確定</td>
+              <td>済</td>
+              <td>天神</td>
+              <td>スタバ</td>
+              <td>アポ たえこ</td>
+              <td>50</td>
+              <td><a class="btn btn-primary btn-sm" href="client_detail.html">顧客詳細</a></td>
+            </tr>
+            <tr>
+              <th scope="row">2021/03/03</th>
+              <td>15:00</td>
+              <td>確定</td>
+              <td>済</td>
+              <td>天神</td>
+              <td>スタバ</td>
+              <td>アポ たか子</td>
+              <td>30</td>
+              <td><a class="btn btn-primary btn-sm" href="client_detail.html">顧客詳細</a></td>
+            </tr>
+            <tr>
+              <th scope="row">2021/03/03</th>
+              <td>11:00</td>
+              <td>調整中</td>
+              <td>未</td>
+              <td>天神</td>
+              <td>ロッテリア</td>
+              <td>アポ ふみこ</td>
+              <td>40</td>
+              <td><a class="btn btn-primary btn-sm" href="client_detail.html">顧客詳細</a></td>
+            </tr>
+            <tr>
+              <th scope="row">2021/03/13</th>
+              <td>11:00</td>
+              <td>調整予定</td>
+              <td>未</td>
+              <td>天神</td>
+              <td>ロッテリア</td>
+              <td>アポ ふみこ</td>
+              <td>40</td>
+              <td><a class="btn btn-primary btn-sm" href="client_detail.html">顧客詳細</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="bootstrap_5.0.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('#appointment-table').tablesorter();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+.index-container .index-sort-wrapper form {
+  display: flex;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.index-container .index-sort-wrapper form input {
+  width: 80%;
+}
+
+.index-container .index-sort-wrapper form button {
+  width: 15%;
+  margin-left: auto;
+}

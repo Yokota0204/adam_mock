@@ -7,6 +7,10 @@ a {
   color: #6c757d;
 }
 
+table {
+  text-align: center;
+}
+
 header .service-title {
   margin-left: 30px;
 }
@@ -89,4 +93,25 @@ header .navbar .collapse .navbar-nav .login-user a img {
 
 .board-table .board-row {
   margin-bottom: 2px;
+}
+
+.index-container {
+  padding: 100px 0;
+}
+
+.index-container .index-title {
+  margin-bottom: 40px;
+}
+
+.index-container .index-sort-wrapper {
+  width: 100%;
+  padding: 100px 100px;
+  border: 1px solid #E5E8E8;
+  border-radius: 10px;
+  margin-bottom: 100px;
+}
+
+.index-container .index-sort-wrapper h4 {
+  margin-bottom: 40px;
+  color: #6c757d;
 }

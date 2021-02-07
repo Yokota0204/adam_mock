@@ -1,0 +1,34 @@
+.index-container .create-wrapper {
+  width: 100%;
+  text-align: center;
+  padding: 50px 100px;
+  border: 1px solid #E5E8E8;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.index-container .create-wrapper h4 {
+  color: #6c757d;
+  margin-bottom: 40px;
+}
+
+.index-container .create-wrapper .btn-wrapper .btn {
+  width: 150px;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+
+.index-container .index-sort-wrapper form {
+  display: flex;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.index-container .index-sort-wrapper form input {
+  width: 80%;
+}
+
+.index-container .index-sort-wrapper form button {
+  width: 15%;
+  margin-left: auto;
+}

@@ -1,0 +1,40 @@
+.index-container .index-sort-wrapper form .input-wrapper {
+  display: flex;
+  margin: 0 auto 40px auto;
+  width: 100%;
+}
+
+.index-container .index-sort-wrapper form .input-wrapper .status {
+  width: 30%;
+}
+
+.index-container .index-sort-wrapper form .input-wrapper .date {
+  width: 70%;
+  display: flex;
+  margin-left: auto;
+}
+
+.index-container .index-sort-wrapper form .input-wrapper .date .select-wrapper {
+  width: 40%;
+  display: flex;
+}
+
+.index-container .index-sort-wrapper form .input-wrapper .date .center-part-wrapper {
+  width: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.index-container .index-sort-wrapper form .input-wrapper .date .start-select-wrapper {
+  margin-left: auto;
+}
+
+.index-container .index-sort-wrapper form .btn-wrapper {
+  width: 100px;
+  margin-left: auto;
+}
+
+.index-container .index-sort-wrapper form .btn-wrapper .btn {
+  width: 100%;
+}
