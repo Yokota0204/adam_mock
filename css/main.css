@@ -42,6 +42,11 @@ header .navbar .collapse .navbar-nav .login-user a img {
   font-weight: bold;
 }
 
+.btn-wrapper .btn:active {
+  transform: translateY(3px);
+  box-shadow: none;
+}
+
 .btn-wrapper .edit-btn {
   background-color: #58D68D;
   color: white;
