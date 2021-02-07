@@ -1,30 +1,58 @@
-.top-wrapper {
+.page-wrapper {
   width: 100%;
-  padding: 100px 10px;
+  padding: 100px 10px 0 10px;
 }
 
-.top-wrapper .btn-wrapper {
+.page-wrapper .btn-wrapper {
   width: 70%;
   margin: 0 auto;
   text-align: center;
 }
 
-.top-wrapper .btn-wrapper .btn {
+.page-wrapper .btn-wrapper .btn {
   margin: 40px;
   padding: 20px 40px;
   color: white;
 }
 
-.top-wrapper .btn-wrapper .client {
+.new-page-wrapper .btn-wrapper .client-new {
+  background-color: #F39C12;
+}
+
+.new-page-wrapper .btn-wrapper .job-genre {
+  background-color: #1ABC9C;
+}
+
+.new-page-wrapper .btn-wrapper .task {
+  background-color: #2471A3;
+}
+
+.index-page-wrapper {
+  margin-bottom: 150px;
+}
+
+.index-page-wrapper .btn-wrapper .client {
   background-color: #F1C40F;
 }
 
-.top-wrapper .btn-wrapper .appointment {
+.index-page-wrapper .btn-wrapper .appointment {
   background-color: #E74C3C;
 }
 
-.top-wrapper .btn-wrapper .agent {
+.index-page-wrapper .btn-wrapper .agent {
   background-color: #3498DB;
+}
+
+.index-page-wrapper .btn-wrapper .income {
+  background-color: #BDC3C7;
+}
+
+.index-page-wrapper .btn-wrapper .outcome {
+  background-color: #5D6D7E;
+}
+
+.index-page-wrapper .btn-wrapper .client-income {
+  background-color: #1E8449;
 }
 
 .nav {

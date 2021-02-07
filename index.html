@@ -34,12 +34,23 @@
     </header>
     <div class="contents">
       <div class="container">
-        <div class="top-wrapper">
+        <div class="page-wrapper new-page-wrapper">
+          <h3 class="border-bottom text-secondary pb-3 mb-5 ">新規追加ページ</h3>
+          <div class="btn-wrapper">
+            <a class="btn client-new more-rounded" href="client_new.html">顧客追加ページ</a>
+            <a class="btn job-genre more-rounded" href="job_genre_new.html">案件ジャンル追加ページ</a>
+            <a class="btn task more-rounded" href="task_new.html">案件タスク追加ページ</a>
+          </div>
+        </div>
+        <div class="page-wrapper index-page-wrapper">
           <h3 class="border-bottom text-secondary pb-3 mb-5 ">一覧ページ</h3>
           <div class="btn-wrapper">
             <a class="btn client more-rounded" href="client_index.html">顧客一覧ページ</a>
             <a class="btn appointment more-rounded" href="appointment_index.html">アポ一覧ページ</a>
             <a class="btn agent more-rounded" href="agent_index.html">代理店一覧ページ</a>
+            <a class="btn income more-rounded" href="income_index.html">入金予定一覧ページ</a>
+            <a class="btn outcome more-rounded" href="outcome_index.html">出勤予定一覧ページ</a>
+            <a class="btn client-income more-rounded" href="client_income_index.html">顧客着金予定一覧ページ</a>
           </div>
         </div>
         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -51,6 +62,15 @@
           </li>
           <li class="nav-item" role="presentation">
             <a class="nav-link" id="agent-tab" data-bs-toggle="tab" href="#agent" role="tab" aria-controls="agent" aria-selected="false">新規代理店</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="income-tab" data-bs-toggle="tab" href="#income" role="tab" aria-controls="income" aria-selected="false">直近の入金予定</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="outcome-tab" data-bs-toggle="tab" href="#outcome" role="tab" aria-controls="outcome" aria-selected="false">直近の出金予定</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="client-income-tab" data-bs-toggle="tab" href="#client-income" role="tab" aria-controls="client-income" aria-selected="false">直近の顧客着金予定</a>
           </li>
         </ul>
         <div class="tab-content text-center" id="myTabContent">
@@ -204,7 +224,6 @@
                 <tr>
                   <th scope="row">7</th>
                   <td>顧客7</td>
-
                   <td>代理店1</td>
                   <td>福岡県</td>
                   <td>福岡市</td>
@@ -311,6 +330,261 @@
               </tbody>
             </table>
           </div>
+          <div class="tab-pane fade show" id="income" role="tabpanel" aria-labelledby="income-tab">
+            <table class="table" id="income-table">
+              <thead>
+                <tr>
+                  <th scope="col">入金予定日</th>
+                  <th scope="col">顧客名</th>
+                  <th scope="col">直紹介者</th>
+                  <th scope="col">案件ジャンル</th>
+                  <th scope="col">詳細確認</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">2021/04/10</th>
+                  <td>顧客1</td>
+                  <td>代理店9</td>
+                  <td>緊急小口資金</td>
+                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">2021/04/21</th>
+                  <td>顧客2</td>
+                  <td>代理店7</td>
+                  <td>総合支援資金</td>
+                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">2021/05/01</th>
+                  <td>顧客3</td>
+                  <td>代理店3</td>
+                  <td>家賃支援給付金</td>
+                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">2021/05/11</th>
+                  <td>顧客4</td>
+                  <td>代理店6</td>
+                  <td>緊急小口資金</td>
+                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">2021/05/21</th>
+                  <td>顧客5</td>
+                  <td>代理店2</td>
+                  <td>総合支援資金</td>
+                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">2021/05/30</th>
+                  <td>顧客6</td>
+                  <td>代理店8</td>
+                  <td>緊急小口資金</td>
+                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">2021/07/31</th>
+                  <td>顧客7</td>
+                  <td>代理店1</td>
+                  <td>緊急小口資金</td>
+                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">2021/08/11</th>
+                  <td>顧客8</td>
+                  <td>代理店3</td>
+                  <td>総合支援資金</td>
+                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">2021/08/31</th>
+                  <td>顧客9</td>
+                  <td>代理店5</td>
+                  <td>家賃支援給付金</td>
+                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">2021/09/10</th>
+                  <td>顧客10</td>
+                  <td>代理店6</td>
+                  <td>総合支援資金</td>
+                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane fade show" id="outcome" role="tabpanel" aria-labelledby="outcome-tab">
+            <table class="table" id="outcome-table">
+              <thead>
+                <tr>
+                  <th scope="col">出金予定日</th>
+                  <th scope="col">顧客名</th>
+                  <th scope="col">直紹介者</th>
+                  <th scope="col">案件ジャンル</th>
+                  <th scope="col">詳細確認</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">2021/04/10</th>
+                  <td>顧客1</td>
+                  <td>代理店9</td>
+                  <td>緊急小口資金</td>
+                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">2021/04/21</th>
+                  <td>顧客2</td>
+                  <td>代理店7</td>
+                  <td>総合支援資金</td>
+                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">2021/05/01</th>
+                  <td>顧客3</td>
+                  <td>代理店3</td>
+                  <td>家賃支援給付金</td>
+                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">2021/05/11</th>
+                  <td>顧客4</td>
+                  <td>代理店6</td>
+                  <td>緊急小口資金</td>
+                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">2021/05/21</th>
+                  <td>顧客5</td>
+                  <td>代理店2</td>
+                  <td>総合支援資金</td>
+                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">2021/05/30</th>
+                  <td>顧客6</td>
+                  <td>代理店8</td>
+                  <td>緊急小口資金</td>
+                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">2021/07/31</th>
+                  <td>顧客7</td>
+                  <td>代理店1</td>
+                  <td>緊急小口資金</td>
+                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">2021/08/11</th>
+                  <td>顧客8</td>
+                  <td>代理店3</td>
+                  <td>総合支援資金</td>
+                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">2021/08/31</th>
+                  <td>顧客9</td>
+                  <td>代理店5</td>
+                  <td>家賃支援給付金</td>
+                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">2021/09/10</th>
+                  <td>顧客10</td>
+                  <td>代理店6</td>
+                  <td>総合支援資金</td>
+                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane fade show" id="client-income" role="tabpanel" aria-labelledby="client-income-tab">
+            <table class="table" id="client-income-table">
+              <thead>
+                <tr>
+                  <th scope="col">着金予定日</th>
+                  <th scope="col">顧客名</th>
+                  <th scope="col">直紹介者</th>
+                  <th scope="col">案件ジャンル</th>
+                  <th scope="col">詳細確認</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">2021/04/10</th>
+                  <td>顧客1</td>
+                  <td>代理店9</td>
+                  <td>緊急小口資金</td>
+                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">2021/04/21</th>
+                  <td>顧客2</td>
+                  <td>代理店7</td>
+                  <td>総合支援資金</td>
+                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">2021/05/01</th>
+                  <td>顧客3</td>
+                  <td>代理店3</td>
+                  <td>家賃支援給付金</td>
+                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">2021/05/11</th>
+                  <td>顧客4</td>
+                  <td>代理店6</td>
+                  <td>緊急小口資金</td>
+                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">2021/05/21</th>
+                  <td>顧客5</td>
+                  <td>代理店2</td>
+                  <td>総合支援資金</td>
+                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">2021/05/30</th>
+                  <td>顧客6</td>
+                  <td>代理店8</td>
+                  <td>緊急小口資金</td>
+                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">2021/07/31</th>
+                  <td>顧客7</td>
+                  <td>代理店1</td>
+                  <td>緊急小口資金</td>
+                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">2021/08/11</th>
+                  <td>顧客8</td>
+                  <td>代理店3</td>
+                  <td>総合支援資金</td>
+                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">2021/08/31</th>
+                  <td>顧客9</td>
+                  <td>代理店5</td>
+                  <td>家賃支援給付金</td>
+                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
+                </tr>
+                <tr>
+                  <th scope="row">2021/09/10</th>
+                  <td>顧客10</td>
+                  <td>代理店6</td>
+                  <td>総合支援資金</td>
+                  <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
@@ -321,6 +595,9 @@
         $('#client-table').tablesorter();
         $('#pre-client-table').tablesorter();
         $('#appointment-table').tablesorter();
+        $('#income-table').tablesorter();
+        $('#outcome-table').tablesorter();
+        $('#client-income-table').tablesorter();
       });
     </script>
   </body>
