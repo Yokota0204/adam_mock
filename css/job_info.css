@@ -1,0 +1,67 @@
+.container {
+  padding-top: 100px;
+}
+
+.container .wrapper {
+  margin-bottom: 100px;
+}
+
+.container .info-wrapper {
+  width: 100%;
+  font-size: 13px;
+}
+
+.container .info-wrapper .info-part {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.container .info-wrapper .board-table {
+  width: 25%;
+  margin-right: 30px;
+}
+
+.container .tasks-wrapper form .btn-wrapper {
+  width: 260px;
+  margin-top: 20px;
+  margin-left: auto;
+  display: flex;
+}
+
+.container .tasks-wrapper form .btn-wrapper .btn {
+  width: 50%;
+  margin-left: 10px;
+}
+
+.container .money-schedule-wrapper .type-wrapper {
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 10px;
+  color: white;
+}
+
+.container .money-schedule-wrapper .client-income .type-wrapper {
+  background-color: #27AE60;
+}
+
+.container .money-schedule-wrapper .income .type-wrapper {
+  background-color: #F1C40F;
+}
+
+.container .money-schedule-wrapper .outcome .type-wrapper {
+  background-color: #F39C12;
+}
+
+.container .money-schedule-wrapper .board-table form .btn-wrapper {
+  width: 260px;
+  margin-top: 20px;
+  margin-left: auto;
+  display: flex;
+}
+
+.container .money-schedule-wrapper .board-table form .btn-wrapper .btn {
+  width: 50%;
+  margin-left: 10px;
+}

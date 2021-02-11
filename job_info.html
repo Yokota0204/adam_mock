@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>業務支援システム | </title>
+    <!-- css -->
+      <link href="bootstrap_5.0.0/css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/main.css" rel="stylesheet">
+      <link href="css/job_info.css" rel="stylesheet">
+    <!-- google font -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap" rel="stylesheet">
+    <!-- jquery -->
+      <script type="text/javascript" src="scripts/jquery.js"></script>
+      <script type="text/javascript" src="scripts/tablesorter/jquery.tablesorter.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="service-title navbar-brand font-weight-bold" href="index.html">業務支援システム（仮）</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="login-user nav-item">
+              <a class="nav-link" href="#">
+                <img class="rounded-circle" src="img/default_icon.png" alt="ユーザーアイコン">
+                <span>User1</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="contents">
+      <div class="container">
+        <div class="title-wrapper">
+          <h4 class="title border-bottom text-secondary pb-3 mb-5 text-center">緊急小口資金</h4>
+        </div>
+        <div class="wrapper info-wrapper">
+          <h5 class="title border-bottom text-secondary pb-3 mb-5 text-center">案件情報</h5>
+          <div class="info-part income-part">
+            <div class="sales-money board-table">
+              <div class="board-row row">
+                <div class="text-secondary col label">着金金額</div>
+                <div class="text-secondary col">¥1,400,000</div>
+              </div>
+            </div>
+            <div class="sales-money board-table">
+              <div class="board-row row">
+                <div class="text-secondary col label">弊社報酬率</div>
+                <div class="text-secondary col">10%</div>
+              </div>
+            </div>
+            <div class="sales-money board-table">
+              <div class="board-row row">
+                <div class="text-secondary col label">売上金額</div>
+                <div class="text-secondary col">¥140,000</div>
+              </div>
+            </div>
+          </div>
+          <div class="info-part agent-part">
+            <div class="agent board-table">
+              <div class="board-row row">
+                <div class="text-secondary col label">紹介者</div>
+                <div class="text-secondary col">代理店１</div>
+              </div>
+            </div>
+            <div class="agent-fee board-table">
+              <div class="board-row row">
+                <div class="text-secondary col label">代理店報酬率</div>
+                <div class="text-secondary col">5%</div>
+              </div>
+            </div>
+            <div class="client-income board-table">
+              <div class="board-row row">
+                <div class="text-secondary col label">代理店報酬額</div>
+                <div class="text-secondary col">¥140,000</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper tasks-wrapper">
+          <h5 class="title border-bottom text-secondary pb-3 mb-5 text-center">タスク一覧</h5>
+          <form action="#">
+            <div class="board-table">
+              <div class="board-header-row row">
+                <div class="col">担当</div>
+                <div class="col">ステータス</div>
+                <div class="col">タスク内容</div>
+                <div class="col">作業完了予定日</div>
+                <div class="col">作業完了日</div>
+                <div class="col">チェック</div>
+              </div>
+              <div class="board-row row done">
+                <div class="col">弊社</div>
+                <div class="col">作業完了</div>
+                <div class="col">申し込み意思確認</div>
+                <div class="col">2021/02/09</div>
+                <div class="col">2021/02/09</div>
+                <div class="col"><input type="checkbox" checked disabled="disabled"></div>
+              </div>
+              <div class="board-row row">
+                <div class="col">本人</div>
+                <div class="col">作業中</div>
+                <div class="col">申し込みフォーム記入</div>
+                <div class="col">2021/02/13</div>
+                <div class="col">-</div>
+                <div class="col"><input type="checkbox"></div>
+              </div>
+              <div class="board-row row">
+                <div class="col">本人</div>
+                <div class="col">作業予定</div>
+                <div class="col">関連画像送信</div>
+                <div class="col">2021/02/15</div>
+                <div class="col">-</div>
+                <div class="col"><input type="checkbox"></div>
+              </div>
+            </div>
+            <div class="btn-wrapper">
+              <a class="btn edit-btn" href="#">編集</a>
+              <button type="submit" class="btn btn-primary">タスク完了</button>
+            </div>
+          </form>
+        </div>
+        <div class="wrapper money-schedule-wrapper">
+          <h5 class="title border-bottom text-secondary pb-3 mb-5 text-center">マネーフローステータス</h5>
+          <div class="board-table">
+            <form action="#">
+              <div class="row board-header-row">
+                <div class="col">種別</div>
+                <div class="col">ステータス</div>
+                <div class="col">予定日</div>
+                <div class="col">完了日</div>
+                <div class="col">金額</div>
+                <div class="col">支払い後残り金額</div>
+                <div class="col">チェック</div>
+              </div>
+              <div class="row board-row done">
+                <div class="col client-income">
+                  <div class="type-wrapper">
+                    着金
+                  </div>
+                </div>
+                <div class="col">未着</div>
+                <div class="col">2020/03/26</div>
+                <div class="col">2020/03/25</div>
+                <div class="col">1,400,000円</div>
+                <div class="col">0円</div>
+                <div class="col"><input type="checkbox" checked disabled="disabled"></div>
+              </div>
+              <div class="row board-row">
+                <div class="col income">
+                  <div class="type-wrapper">
+                    入金
+                  </div>
+                </div>
+                <div class="col">未着</div>
+                <div class="col">2020/03/31</div>
+                <div class="col">-</div>
+                <div class="col"> 210,000円</div>
+                <div class="col">0円</div>
+                <div class="col"><input type="checkbox"></div>
+              </div>
+              <div class="row board-row">
+                <div class="col outcome">
+                  <div class="type-wrapper">
+                    出金
+                  </div>
+                </div>
+                <div class="col">未着</div>
+                <div class="col">2020/04/10</div>
+                <div class="col">-</div>
+                <div class="col">70,000円</div>
+                <div class="col">0円</div>
+                <div class="col"><input type="checkbox"></div>
+              </div>
+              <div class="btn-wrapper">
+                <a class="btn edit-btn" href="#">編集</a>
+                <button type="submit" class="btn btn-primary">タスク完了</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="bootstrap_5.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

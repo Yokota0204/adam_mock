@@ -92,12 +92,20 @@ header .navbar .collapse .navbar-nav .login-user a img {
   border-radius: 10px;
 }
 
+.board-table .done {
+  background-color: #eee;
+}
+
 .board-table .board-header-row {
   margin-bottom: 1rem;
+  box-shadow: 0 3px 2px 0 rgba(0, 0, 0, .2);
+  border: 1px solid #dee2e6;
 }
 
 .board-table .board-row {
   margin-bottom: 2px;
+  box-shadow: 0 3px 2px 0 rgba(0, 0, 0, .2);
+  border: 1px solid #dee2e6;
 }
 
 .index-container {
