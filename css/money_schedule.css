@@ -1,0 +1,33 @@
+.container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.container .money-info-wrapper {
+  margin-bottom: 100px;
+}
+
+/* .container .schedules-wrapper {
+  border-radius: 10px;
+  background-color: #eee;
+  padding: 30px;
+} */
+
+.container .schedules-wrapper .schedule-header {
+  margin-bottom: 50px;
+}
+
+.container .schedules-wrapper .schedule-content {
+  overflow: auto;
+  width: 100%;
+  height: 500px;
+}
+
+.container .schedules-wrapper .schedule-content .schedule-wrapper {
+  width: 100%;
+  margin: 0 auto 20px auto;
+}
+
+.container .schedules-wrapper .schedule-content .schedule-wrapper .schedule .row {
+  margin-bottom: 10px;
+}

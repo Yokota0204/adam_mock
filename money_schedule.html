@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>業務支援システム | </title>
+    <!-- css -->
+      <link href="bootstrap_5.0.0/css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/main.css" rel="stylesheet">
+      <link href="css/money_schedule.css" rel="stylesheet">
+    <!-- google font -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap" rel="stylesheet">
+    <!-- jquery -->
+      <script type="text/javascript" src="scripts/jquery.js"></script>
+      <script type="text/javascript" src="scripts/tablesorter/jquery.tablesorter.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="service-title navbar-brand font-weight-bold" href="index.html">業務支援システム（仮）</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="login-user nav-item">
+              <a class="nav-link" href="#">
+                <img class="rounded-circle" src="img/default_icon.png" alt="ユーザーアイコン">
+                <span>User1</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="contents">
+      <div class="container">
+        <div class="money-info-wrapper">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">今月の売上</th>
+                <th scope="col">今月の営業利益</th>
+                <th scope="col">前月売上比</th>
+                <th scope="col">前月売上金額</th>
+                <th scope="col">前月営業利益</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="col">2,500,000円</th>
+                <th scope="col">250,000円</th>
+                <th scope="col">-300,000円</th>
+                <th scope="col">2,800,000円</th>
+                <th scope="col">280,000円</th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="schedules-wrapper">
+          <div class="schedule-header row">
+            <div class="col-4 date"></div>
+            <div class="col-8 schedule board-table">
+              <div class="row board-row">
+                <div class="col">支払人</div>
+                <div class="col">受取人</div>
+                <div class="col">案件ジャンル</div>
+                <div class="col">種別</div>
+                <div class="col">金額</div>
+              </div>
+            </div>
+          </div>
+          <div class="schedule-content">
+            <div class="schedule-wrapper row">
+              <div class="col-3 date">
+                <h5 class="pb-3 border-bottom">2021/02/11 Thu</h5>
+              </div>
+              <div class="col-1"></div>
+              <div class="col-8 schedule board-table">
+                <div class="row board-row client-income">
+                  <div class="col">-</div>
+                  <div class="col">顧客１</div>
+                  <div class="col">緊急小口資金</div>
+                  <div class="col">着金</div>
+                  <div class="col">1,400,000円</div>
+                </div>
+                <div class="row board-row outcome">
+                  <div class="col">弊社</div>
+                  <div class="col">代理店１</div>
+                  <div class="col">緊急小口資金</div>
+                  <div class="col">出金</div>
+                  <div class="col">70,000円</div>
+                </div>
+              </div>
+            </div>
+            <div class="schedule-wrapper row">
+              <div class="col-3 date">
+                <h5 class="pb-3 border-bottom">2021/02/13 Sat</h5>
+              </div>
+              <div class="col-1"></div>
+              <div class="col-8 schedule board-table">
+                <div class="row board-row income">
+                  <div class="col">顧客２</div>
+                  <div class="col">弊社</div>
+                  <div class="col">緊急小口資金</div>
+                  <div class="col">入金</div>
+                  <div class="col">140,000円</div>
+                </div>
+              </div>
+            </div>
+            <div class="schedule-wrapper row">
+              <div class="col-3 date">
+                <h5 class="pb-3 border-bottom">2021/02/15 Mon</h5>
+              </div>
+              <div class="col-1"></div>
+              <div class="col-8 schedule board-table">
+                <div class="row board-row client-income">
+                  <div class="col">-</div>
+                  <div class="col">顧客３</div>
+                  <div class="col">総合支援資金</div>
+                  <div class="col">着金</div>
+                  <div class="col">200,000円</div>
+                </div>
+                <div class="row board-row outcome">
+                  <div class="col">弊社</div>
+                  <div class="col">代理店2</div>
+                  <div class="col">緊急小口資金</div>
+                  <div class="col">出金</div>
+                  <div class="col">70,000円</div>
+                </div>
+              </div>
+            </div>
+            <div class="schedule-wrapper row">
+              <div class="col-3 date">
+                <h5 class="pb-3 border-bottom">2021/02/18 Thu</h5>
+              </div>
+              <div class="col-1"></div>
+              <div class="col-8 schedule board-table">
+                <div class="row board-row income">
+                  <div class="col">顧客３</div>
+                  <div class="col">弊社</div>
+                  <div class="col">総合支援資金</div>
+                  <div class="col">入金</div>
+                  <div class="col">20,000円</div>
+                </div>
+              </div>
+            </div>
+            <div class="schedule-wrapper row">
+              <div class="col-3 date">
+                <h5 class="pb-3 border-bottom">2021/02/21 Sun</h5>
+              </div>
+              <div class="col-1"></div>
+              <div class="col-8 schedule board-table">
+                <div class="row board-row client-income">
+                  <div class="col">-</div>
+                  <div class="col">顧客３</div>
+                  <div class="col">総合支援資金</div>
+                  <div class="col">着金</div>
+                  <div class="col">140,000円</div>
+                </div>
+              </div>
+            </div>
+            <div class="schedule-wrapper row">
+              <div class="col-3 date">
+                <h5 class="pb-3 border-bottom">2021/02/22 Mon</h5>
+              </div>
+              <div class="col-1"></div>
+              <div class="col-8 schedule board-table">
+                <div class="row board-row client-income">
+                  <div class="col">-</div>
+                  <div class="col">顧客３</div>
+                  <div class="col">総合支援資金</div>
+                  <div class="col">着金</div>
+                  <div class="col">140,000円</div>
+                </div>
+              </div>
+            </div>
+            <div class="schedule-wrapper row">
+              <div class="col-3 date">
+                <h5 class="pb-3 border-bottom">2021/02/23 Tue</h5>
+              </div>
+              <div class="col-1"></div>
+              <div class="col-8 schedule board-table">
+                <div class="row board-row client-income">
+                  <div class="col">-</div>
+                  <div class="col">顧客３</div>
+                  <div class="col">総合支援資金</div>
+                  <div class="col">着金</div>
+                  <div class="col">140,000円</div>
+                </div>
+              </div>
+            </div>
+            <div class="schedule-wrapper row">
+              <div class="col-3 date">
+                <h5 class="pb-3 border-bottom">2021/02/25 Thu</h5>
+              </div>
+              <div class="col-1"></div>
+              <div class="col-8 schedule board-table">
+                <div class="row board-row client-income">
+                  <div class="col">-</div>
+                  <div class="col">顧客３</div>
+                  <div class="col">総合支援資金</div>
+                  <div class="col">着金</div>
+                  <div class="col">140,000円</div>
+                </div>
+                <div class="row board-row outcome">
+                  <div class="col">弊社</div>
+                  <div class="col">代理店3</div>
+                  <div class="col">緊急小口資金</div>
+                  <div class="col">出金</div>
+                  <div class="col">70,000円</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="bootstrap_5.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
