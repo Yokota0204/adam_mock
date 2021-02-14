@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>業務支援システム | 代理店情報</title>
+    <!-- css -->
+      <link href="bootstrap_5.0.0/css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/main.css" rel="stylesheet">
+      <link href="css/agent_info.css" rel="stylesheet">
+    <!-- google font -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap" rel="stylesheet">
+    <!-- jquery -->
+      <script type="text/javascript" src="scripts/jquery.js"></script>
+      <script type="text/javascript" src="scripts/tablesorter/jquery.tablesorter.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="service-title navbar-brand font-weight-bold" href="index.html">業務支援システム（仮）</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="login-user nav-item">
+              <a class="nav-link" href="#">
+                <img class="rounded-circle" src="img/default_icon.png" alt="ユーザーアイコン">
+                <span>CEO</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="contents">
+      <div class="content">
+        <div class="container">
+          <h4 class="border-bottom pb-3 mb-4 text-secondary">基本情報</h4>
+          <div class="personal-info-wrapper">
+            <div class="half-wrapper left-wrapper">
+              <img class="rounded-circle" src="img/sex/male.png" alt="男性アイコン">
+            </div>
+            <div class="half-wrapper right-wrapper">
+              <p class="client-id">代理店ID： 1</p>
+                <div class="name-wrapper">
+                  <h5>代理 店助</h5>
+                  <h6>ダイリ テンスケ</h6>
+                </div>
+                <p>福岡県福岡市</p>
+                <p>1996/02/21 24歳</p>
+                <p>090-1234-5678</p>
+                <p>dairi@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="half-contents container">
+        <div class="left-content">
+          <div class="container">
+            <h4 class="border-bottom pb-3 mb-4 text-secondary">売上レポート</h4>
+            <div class="left-content-wrapper sales-info-wrapper">
+              <div class="goal-wrapper">
+                <h5 class="border-bottom pb-3 mb-4 text-secondary">今月の目標</h5>
+                <div class="summary-table">
+                  <div class="row text-center">
+                    <div class="col">累計報酬合計</div>
+                    <div class="col">当月報酬合計</div>
+                    <div class="col">当月の目標</div>
+                    <div class="col">目標との差異</div>
+                  </div>
+                  <div class="row text-center">
+                    <div class="col">500,000</div>
+                    <div class="col">200,000</div>
+                    <div class="col">300,000</div>
+                    <div class="col">-100,000</div>
+                  </div>
+                </div>
+                <div class="board-table">
+                  <div class="board-header-row row">
+                    <div class="col">案件ジャンル</div>
+                    <div class="col">件数</div>
+                    <div class="col">売上</div>
+                    <div class="col">報酬</div>
+                  </div>
+                  <div class="board-row row" href="#">
+                    <div class="col">緊急小口資金</div>
+                    <div class="col">5</div>
+                    <div class="col">700,000</div>
+                    <div class="col">350,000</div>
+                  </div>
+                </div>
+                <div class="btn-wrapper edit">
+                  <a class="btn edit-btn" href="#">編集</a>
+                </div>
+                <div class="new">
+                  <p>今月の目標が設定されていません。</p>
+                  <div class="btn-wrapper">
+                    <a class="btn btn-primary" href="#">新規追加</a>
+                  </div>
+                </div>
+              </div>
+              <div class="goals-table-wrapper">
+                <h5 class="border-bottom pb-3 mb-4 text-secondary">過去の目標</h5>
+                <div class="board-table">
+                  <div class="board-header-row row">
+                    <div class="col">年度</div>
+                    <div class="col">月</div>
+                    <div class="col">目標報酬額</div>
+                    <div class="col">報酬額</div>
+                    <div class="col">前月比</div>
+                  </div>
+                  <a class="board-row row" href="#">
+                    <div class="col">2021年</div>
+                    <div class="col">1月</div>
+                    <div class="col">500,000</div>
+                    <div class="col">200,000</div>
+                    <div class="col">+100%</div>
+                  </a>
+                  <a class="board-row row" href="#">
+                    <div class="col">2020年</div>
+                    <div class="col">12月</div>
+                    <div class="col">300,000</div>
+                    <div class="col">100,000</div>
+                    <div class="col">-</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right-content">
+          <div class="container">
+            <div class="right-content-wrapper clients-wrapper">
+              <h4 class="border-bottom pb-3 mb-4 text-secondary">顧客一覧</h4>
+              <table class="table" id="client-table">
+                <thead>
+                  <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">名前</th>
+                    <th scope="col">住所（都道府県）</th>
+                    <th scope="col">住所（市町村）</th>
+                    <th scope="col">詳細</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>顧客15</td>
+                    <td>福岡県</td>
+                    <td>福岡市</td>
+                    <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>顧客18</td>
+                    <td>福岡県</td>
+                    <td>福岡市</td>
+                    <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>顧客21</td>
+                    <td>福岡県</td>
+                    <td>福岡市</td>
+                    <td><a class="btn btn-primary btn-sm" href="client_info.html">詳細を見る</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="bootstrap_5.0.0/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('#client-table').tablesorter();
+      });
+    </script>
+  </body>
+</html>

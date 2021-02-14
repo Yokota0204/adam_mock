@@ -1,0 +1,59 @@
+.content {
+  padding: 80px 70px;
+}
+
+.content .container .personal-info-wrapper {
+  display: flex;
+  text-align: center;
+}
+
+.content .container .personal-info-wrapper .half-wrapper {
+  width: 50%;
+  padding: 30px;
+}
+
+.half-contents {
+  display: flex;
+}
+
+.half-contents .left-content .container {
+  padding: 0 50px 80px 0;
+}
+
+.half-contents .left-content .container .sales-info-wrapper .goal-wrapper {
+  margin-bottom: 30px;
+}
+
+.half-contents .left-content .container .sales-info-wrapper .goal-wrapper .summary-table {
+  margin-bottom: 30px;
+  display: none;
+}
+
+.half-contents .left-content .container .sales-info-wrapper .goal-wrapper .board-table {
+  display: none;
+}
+
+.half-contents .left-content .container .sales-info-wrapper .btn-wrapper .btn {
+  width: 100%;
+}
+
+.half-contents .left-content .container .sales-info-wrapper .edit {
+  width: 100px;
+  margin-left: auto;
+  margin-top: 20px;
+  display: none;
+}
+
+.half-contents .left-content .container .sales-info-wrapper .new {
+  text-align: center;
+}
+
+.half-contents .left-content .container .sales-info-wrapper .new .btn-wrapper {
+  width: 100px;
+  margin: 0 auto;
+}
+
+.half-contents .right-content .container {
+  padding: 0 0 80px 50px;
+}
+
