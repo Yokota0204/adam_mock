@@ -12,10 +12,6 @@
   padding: 30px;
 }
 
-.half-contents {
-  display: flex;
-}
-
 .half-contents .left-content .container {
   padding: 0 50px 80px 0;
 }

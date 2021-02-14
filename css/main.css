@@ -29,11 +29,11 @@ header .navbar .collapse .navbar-nav .login-user a img {
   border-radius: 10px;
 }
 
-.left-content {
-  width: 50%;
+.half-contents {
+  display: flex;
 }
 
-.right-content {
+.half-content {
   width: 50%;
 }
 
