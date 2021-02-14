@@ -103,7 +103,7 @@ header .navbar .collapse .navbar-nav .login-user a img {
 }
 
 .board-table .board-row {
-  margin-bottom: 2px;
+  margin-bottom: 5px;
   box-shadow: 0 3px 2px 0 rgba(0, 0, 0, .2);
   border: 1px solid #dee2e6;
 }

@@ -43,14 +43,6 @@
   margin-bottom: 20px;
 }
 
-/* .left-content .card .card-body .icon-wrapper a {
-  display: block;
-} */
-
-/* .left-content .card .card-body .name {
-  display: block;
-} */
-
 .right-content {
   padding: 120px 70px 150px 50px;
 }
@@ -75,15 +67,6 @@
   padding: 0;
 }
 
-.right-content .sales-status-wrapper .container .row .col {
-  /* padding: 10px 0; */
-}
-
-.right-content .sales-status-wrapper .container .row .done {
-  /* background-color: cornflowerblue;
-  color: white; */
-}
-
 .right-content .sales-status-wrapper .container .btn-wrapper {
   /* width: 20%; */
   margin-top: 20px;
@@ -100,7 +83,6 @@
 
 .right-content .jobs-wrapper .jobs .row {
   padding: 10px 25px;
-  margin-bottom: 2px;
 }
 
 .right-content .jobs-wrapper .jobs .row .col-8 {
