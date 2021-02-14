@@ -7,7 +7,7 @@
 }
 
 .left-content {
-  padding: 80px 50px 150px 70px;
+  padding: 80px 50px 50px 70px;
 }
 
 .left-content .personal-info-wrapper .personal-info-top {
@@ -71,7 +71,15 @@
 }
 
 .right-content {
-  padding: 80px 70px 150px 50px;
+  padding: 80px 70px 50px 50px;
+}
+
+.right-content .info-wrapper .wrapper-title .btn-wrapper {
+  width: 19%;
+}
+
+.right-content .info-wrapper .wrapper-title .btn-wrapper .btn {
+  width: 100%;
 }
 
 .right-content .animals-wrapper .animal-wrapper {
@@ -107,4 +115,16 @@
   width: 50%;
   margin-left: 10px;
   font-weight: bold;
+}
+
+.contents .back {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.contents .back .btn {
+  width: 100%;
+  background-color: #F1C40F;
+  color: white;
+  margin-bottom: 100px;
 }
