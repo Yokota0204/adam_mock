@@ -5,6 +5,7 @@
 .form-title {
   width: 33%;
   margin-top: 100px;
+  margin-bottom: 100px;
   /* margin: 100px auto 50px auto; */
   letter-spacing: 8px;
 }
@@ -27,11 +28,11 @@ form .form-group label {
 }
 
 .form-group {
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 
-form .form-group .input-mb {
-  margin-bottom: 30px;
+.animal .selection .row {
+  margin-bottom: 50px;
 }
 
 form .btn-wrapper {
