@@ -22,11 +22,11 @@
 
 .half-contents .left-content .container .sales-info-wrapper .goal-wrapper .summary-table {
   margin-bottom: 30px;
-  display: none;
+  /* display: none; */
 }
 
 .half-contents .left-content .container .sales-info-wrapper .goal-wrapper .board-table {
-  display: none;
+  /* display: none; */
 }
 
 .half-contents .left-content .container .sales-info-wrapper .btn-wrapper .btn {
@@ -37,19 +37,29 @@
   width: 100px;
   margin-left: auto;
   margin-top: 20px;
-  display: none;
+  /* display: none; */
 }
 
 .half-contents .left-content .container .sales-info-wrapper .new {
   text-align: center;
+  display: none;
 }
 
 .half-contents .left-content .container .sales-info-wrapper .new .btn-wrapper {
   width: 100px;
   margin: 0 auto;
+  display: none;
 }
 
 .half-contents .right-content .container {
   padding: 0 0 80px 50px;
 }
 
+.content .deprive-btn-wrapper {
+  width: 230px;
+  margin: 0 auto;
+}
+
+.content .deprive-btn-wrapper .btn {
+  width: 100%;
+}
