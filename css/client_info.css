@@ -77,6 +77,10 @@
   width: 100%;
 } */
 
+.right-content .jobs-wrapper {
+  margin-bottom: 100px;
+}
+
 .right-content .jobs-wrapper .jobs {
   margin-top: 20px;
 }
@@ -91,4 +95,13 @@
 
 .right-content .jobs-wrapper .jobs .row .col-4 {
   text-align: right;
+}
+
+.right-content .create-agent-wrapper .btn-wrapper {
+  width: 40%;
+  margin: 50px auto;
+}
+
+.right-content .create-agent-wrapper .btn-wrapper .btn {
+  width: 100%;
 }
