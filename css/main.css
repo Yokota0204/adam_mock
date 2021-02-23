@@ -128,3 +128,8 @@ header .navbar .collapse .navbar-nav .login-user a img {
   margin-bottom: 40px;
   color: #6c757d;
 }
+
+.modal .modal-dialog .modal-header button {
+  border: none;
+  background-color: transparent;
+}
